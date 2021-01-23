@@ -10,7 +10,9 @@ Features:
 
 ## Getting Started
 
-### Setup `gomplate` and copy files
+### Initial setup
+
+Setup `gomplate` and copy env and customization files.
 
 ```bash
   sh $PWD/scripts/init
@@ -19,8 +21,17 @@ Features:
 ### Customize your project
 
 1. Setup your repos (or you can add the links later)
-2. Add your project settings to `customize.json`. You also need to generate an admin JWT secret token 
-   `node -e "console.log(require('crypto').randomBytes(64).toString('base64'))" | pbcopy`
+2. Add your project settings to `customize.json`. 
+
+---
+
+NOTE: If you need to generate an admin JWT secret token for Strapi
+
+```bash
+  node -e "console.log(require('crypto').randomBytes(64).toString('base64'))" | pbcopy
+```
+
+---
 
 ### Generate your project 
 
