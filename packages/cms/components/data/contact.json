@@ -1,0 +1,32 @@
+{
+  "info": {
+    "name": "contact",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "position": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "media": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "published": {
+      "type": "boolean"
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_data_contacts"
+}

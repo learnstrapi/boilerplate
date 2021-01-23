@@ -1,0 +1,20 @@
+{
+  "info": {
+    "name": "faq",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "richtext"
+    },
+    "published": {
+      "type": "boolean"
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_data_faqs"
+}

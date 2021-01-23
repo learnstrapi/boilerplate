@@ -1,0 +1,57 @@
+{
+  "author": {
+    "name": "<<[ .learnstrapi.author.name ]>>",
+    "email": "<<[ .learnstrapi.author.email ]>>",
+    "url": "<<[ .learnstrapi.author.url ]>>"
+  },
+  "description": "Resources and recipes for Strapi afficionados",
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-preset-env": "^1.7.0",
+    "dotenv": "^8.0.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.3",
+    "lerna": "^3.16.4",
+    "lint": "^1.1.2",
+    "lint-staged": "^10.0.8",
+    "prettier": "^2.0.2",
+    "typescript": "^3.9.5"
+  },
+  "license": "<<[ .learnstrapi.workspace.license ]>>",
+  "lint-staged": {
+    "*.{js, jsx, ts, tsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add ."
+    ]
+  },
+  "main": "index.js",
+  "name": "<<[ .learnstrapi.workspace.name ]>>",
+  "private": <<[ .learnstrapi.workspace.private ]>>,
+  "repository": "<<[ .learnstrapi.workspace.repository ]>>",
+  "scripts": {
+    "setup": "lerna run setup",
+    "dev": "cd ./packages/client && yarn dev",
+    "dev:cms": "lerna run dev:cms --loglevel verbose --stream --parallel",
+    "lint": "lerna run lint --loglevel verbose --stream --parallel",
+    "dev:docker": "lerna run dev:docker --loglevel verbose --stream --parallel",
+    "start": "lerna run dev --loglevel verbose --stream --parallel",
+    "start:now": "lerna run dev --loglevel verbose --stream --parallel",
+    "build": "lerna run build --loglevel verbose --stream --parallel",
+    "format": "prettier --single-quote --write '*.{js, jsx, ts, tsx}'",
+    "seed": "node packages/api/seeds.js",
+    "generate": "graphql-codegen"
+  },
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/**/*"
+  ]
+}

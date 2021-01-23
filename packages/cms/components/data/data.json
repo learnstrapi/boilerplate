@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "components_data_data",
+  "info": {
+    "name": "data",
+    "icon": "anchor"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "meta": {
+      "type": "json"
+    },
+    "media": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "published": {
+      "type": "boolean"
+    },
+    "value": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

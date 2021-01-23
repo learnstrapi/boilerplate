@@ -1,0 +1,78 @@
+{
+  "branding": {
+    "name": "",
+    "strapLine": "",
+    "socials": {
+      "instagram": "https://instagram.com/",
+      "linkedin": "https://www.linkedin.com/company/",
+      "twitter": "https://twitter.com/"
+    }
+  },
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "workspace": {
+    "description": "",
+    "license": "MIT",
+    "name": "",
+    "repository": "",
+    "private": true
+  },
+  "packages": {
+    "client": {
+      "description": "",
+      "license": "MIT",
+      "name": "",
+      "repository": "",
+      "private": true,
+      "gtmId": "",
+      "url": {
+        "dev": "http://localhost:3000",
+        "prod": ""
+      }
+    },
+    "cms": {
+      "description": "",
+      "license": "MIT",
+      "name": "",
+      "repository": "",
+      "private": true,
+      "config": {
+        "adminJwtSecret": "",
+        "strapiVersion": "^3.4.6",
+        "url": {
+          "dev": "http://localhost:1337",
+          "prod": ""
+        }
+      },
+      "database": {
+        "client": "postgres",
+        "host": "localhost",
+        "name": "",
+        "password": "postgres",
+        "port": 5432,
+        "username": "postgres"
+      },
+      "providers": {
+        "email": {
+          "aws": {
+            "sesFrom": "",
+            "sesKey": "",
+            "sesRegionUrl": "",
+            "sesReply": "",
+            "sesSecret": "
+          }
+        },
+        "upload": {
+          "cloudinary": {
+            "apiKey": "",
+            "apiSecret": "",
+            "cloudName": ""
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+overwrite: true
+schema: '<<[ .learnstrapi.packages.client.url.dev ]>>/graphql'
+documents: 'lib/gql/**/**.ts'
+generates:
+  packages/client/lib/gql/types.ts:
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-react-apollo'
+      - 'fragment-matcher'
+  packages/client/lib/gql/graphql.schema.json:
+    plugins:
+      - 'introspection'

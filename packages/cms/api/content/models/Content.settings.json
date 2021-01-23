@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "contents",
+  "info": {
+    "name": "content",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "media": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "meta": {
+      "type": "json"
+    },
+    "ctaLink": {
+      "type": "string"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "data": {
+      "type": "dynamiczone",
+      "components": [
+        "data.link",
+        "data.client"
+      ]
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data.linkgroup"
+    },
+    "screen": {
+      "via": "contents",
+      "model": "screen"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/taxonomies",
+      "handler": "taxonomy.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/taxonomies/count",
+      "handler": "taxonomy.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/taxonomies/:id",
+      "handler": "taxonomy.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/taxonomies",
+      "handler": "taxonomy.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/taxonomies/:id",
+      "handler": "taxonomy.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/taxonomies/:id",
+      "handler": "taxonomy.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

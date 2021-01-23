@@ -1,0 +1,21 @@
+{
+  "connection": "default",
+  "collectionName": "components_user_content_comments",
+  "info": {
+    "name": "comments",
+    "icon": "book-reader"
+  },
+  "options": {},
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "message": {
+      "type": "text"
+    },
+    "likes": {
+      "type": "integer"
+    }
+  }
+}

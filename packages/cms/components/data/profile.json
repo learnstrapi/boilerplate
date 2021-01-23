@@ -1,0 +1,38 @@
+{
+  "info": {
+    "name": "profile",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "surname": {
+      "type": "string"
+    },
+    "wantsMarketing": {
+      "type": "boolean",
+      "default": true
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "city": {
+      "type": "string"
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "network": {
+      "type": "string"
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_data_profiles"
+}

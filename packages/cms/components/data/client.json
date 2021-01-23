@@ -1,0 +1,50 @@
+{
+  "connection": "default",
+  "collectionName": "components_data_clients",
+  "info": {
+    "name": "client",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "services": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "sector": {
+      "type": "enumeration",
+      "enum": [
+        "development",
+        "sports",
+        "tech",
+        "CSR"
+      ]
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

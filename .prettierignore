@@ -1,0 +1,10 @@
+.next
+*.cache
+*.next
+*.now
+*/cache
+api
+build
+cms
+out
+public

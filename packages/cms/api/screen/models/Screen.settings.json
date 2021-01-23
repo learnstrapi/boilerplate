@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "screens",
+  "info": {
+    "name": "screen",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ]
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string",
+      "unique": false
+    },
+    "url": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "published": {
+      "default": true,
+      "type": "boolean"
+    },
+    "meta": {
+      "type": "json"
+    },
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "data.hero"
+    },
+    "faqs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data.faq"
+    },
+    "data": {
+      "type": "dynamiczone",
+      "components": [
+        "data.contact",
+        "data.client",
+        "data.service"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "data.seo"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data.linkgroup"
+    },
+    "contents": {
+      "collection": "content",
+      "via": "screen"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_data_educations",
+  "info": {
+    "name": "education",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}
