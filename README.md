@@ -50,4 +50,4 @@ NOTE: If you need to generate an admin JWT secret token for Strapi
 
 ### Recommendations
 
-We recommend using a submodule for the `packages/cms` directly so you can freely deploy this on Heroku, Digital Ocean, AWS or anywhere you can host a node server.
+We recommend using a submodule for the `packages/cms` package so you can freely deploy this on Heroku, Digital Ocean, AWS or anywhere you can host a node server.
