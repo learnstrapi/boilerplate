@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "components_data_heroes",
+  "info": {
+    "name": "Hero",
+    "icon": "asterisk"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "url": {
+      "type": "string"
+    },
+    "meta": {
+      "type": "json"
+    },
+    "ctaText": {
+      "type": "string"
+    }
+  }
+}

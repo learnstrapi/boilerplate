@@ -1,0 +1,39 @@
+{
+  "connection": "default",
+  "collectionName": "components_data_seos",
+  "info": {
+    "name": "seo",
+    "icon": "bong"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 80
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "article",
+        "website"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "locale": {
+      "type": "enumeration",
+      "enum": [
+        "en_US",
+        "en_GB",
+        "en_NG"
+      ]
+    }
+  }
+}

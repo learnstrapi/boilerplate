@@ -1,0 +1,52 @@
+{
+  "license": "<<[ .cus.packages.cms.license ]>>",
+  "description": "<<[ .cus.packages.cms.description ]>>",
+  "name": "<<[ .cus.packages.cms.name ]>>",
+  "private": "<<[ .cus.packages.cms.private ]>>",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "strapi build",
+    "dev:cms": "NODE_ENV=development strapi develop",
+    "setup": "createdb <<[ .cus.packages.cms.database.name ]>> && cp .env.sample .env",
+    "start": "NODE_ENV=production strapi start",
+    "strapi": "strapi"
+  },
+  "devDependencies": {
+    "@types/ramda": "^0.26.43",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.19.1",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "pryjs": "^1.0.3"
+  },
+  "dependencies": {
+    "bad-words": "^3.0.3",
+    "dayjs": "^1.8.35",
+    "firebase": "^7.17.1",
+    "knex": "^0.21.1",
+    "pg": "^8.0.3",
+    "pg-connection-string": "^2.4.0",
+    "prettier": "^2.2.1",
+    "ramda": "^0.27.1",
+    "slugify": "^1.4.0",
+    "strapi": "<<[ .cus.packages.cms.config.strapiVersion ]>>",
+    "strapi-admin": "<<[ .cus.packages.cms.config.strapiVersion ]>>",
+    "strapi-connector-bookshelf": "<<[ .cus.packages.cms.config.strapiVersion ]>>",
+    "strapi-plugin-content-manager": "<<[ .cus.packages.cms.config.strapiVersion ]>>",
+    "strapi-plugin-content-type-builder": "<<[ .cus.packages.cms.config.strapiVersion ]>>",
+    "strapi-plugin-graphql": "<<[ .cus.packages.cms.config.strapiVersion ]>>",
+    "strapi-plugin-upload": "<<[ .cus.packages.cms.config.strapiVersion ]>>",
+    "strapi-plugin-users-permissions": "<<[ .cus.packages.cms.config.strapiVersion ]>>",
+    "strapi-provider-email-amazon-ses": "<<[ .cus.packages.cms.config.strapiVersion ]>>",
+    "strapi-provider-upload-cloudinary": "<<[ .cus.packages.cms.config.strapiVersion ]>>",
+    "strapi-utils": "<<[ .cus.packages.cms.config.strapiVersion ]>>",
+    "unirest": "^0.6.0",
+    "yup": "^0.27.0"
+  },
+  "strapi": {
+    "uuid": "6fe0b848-e900-4ef0-9bdc-80ca07a8bacf"
+  }
+}

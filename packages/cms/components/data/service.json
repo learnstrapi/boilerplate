@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "components_data_services",
+  "info": {
+    "name": "service",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "website": {
+      "type": "string"
+    }
+  }
+}

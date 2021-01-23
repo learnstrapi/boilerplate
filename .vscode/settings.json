@@ -1,0 +1,26 @@
+{
+  "grammarly.overrides": [
+    {
+      "files": [
+        "**/packages/client/customize.json"
+      ],
+      "config": {
+        "audience": "general",
+        "dialect": "british",
+        "domain": "general",
+        "emotions": [
+          "neutral"
+        ],
+        "goals": [
+          "inform"
+        ]
+      }
+    }
+  ],
+  "extensions.ignoreRecommendations": true,
+  "files.autoSave": "off",
+  "typescript.tsc.autoDetect": "off",
+  "npm.autoDetect": "off",
+  "debug.allowBreakpointsEverywhere": true,
+  "html.autoClosingTags": false
+}

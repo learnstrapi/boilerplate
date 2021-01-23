@@ -1,0 +1,19 @@
+{
+  "info": {
+    "name": "linkgroup",
+    "icon": "angry"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data.link"
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_data_linkgroups"
+}

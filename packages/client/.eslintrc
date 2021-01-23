@@ -1,0 +1,19 @@
+{
+  "extends": ["adjunct"],
+  "env": {
+    "browser": true,
+    "jest": true,
+    "node": true
+  },
+  "globals": {
+    "page": true,
+    "browser": true,
+    "context": true,
+    "jestPuppeteer": true
+  },
+  "rules": {
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "import/prefer-default-export": 0,
+    "react/jsx-props-no-spreading": 0
+  }
+}

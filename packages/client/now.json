@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "public": true,
+  "build": {
+    "env": {
+      "GTM_ID": "@gtm_id"
+    }
+  }
+}
