@@ -1,4 +1,4 @@
-# LearnStrapi Boilerplate
+# 🚀 LearnStrapi Boilerplate
 
 Full stack boilerplate for Strapi + Next.js + Chakra UI projects
 
