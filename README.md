@@ -21,16 +21,20 @@ Features:
 1. Setup your repos (or you can add the links later)
 2. Add your project settings to `customize.json`. You also need to generate an admin JWT secret token 
    `node -e "console.log(require('crypto').randomBytes(64).toString('base64'))" | pbcopy`
-3. Run `sh $PWD/scripts/customize` to generate your project
 
+### Generate your project 
+
+```bash
+  sh $PWD/scripts/customize
+```
 
 ### Running your project locally
 
-#### `lerna bootstrap` Install dependencies
+##### `lerna bootstrap` Install dependencies
 
-#### `lerna run build` Build Admin UI & Frontend
+##### `lerna run build` Build Admin UI & Frontend
 
-#### `lerna run start` Start frontend and backend with `lerna`
+##### `lerna run start` Start frontend and backend with `lerna`
 
 
 ### Recommendations
