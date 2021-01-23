@@ -32,8 +32,6 @@ Features:
 
 #### `lerna run start` Start frontend and backend with `lerna`
 
-API: <<<[ .cus.packages.cms.config.url.dev ]>>/admin>
-Client: <<<[ .cus.packages.client.url.dev ]>>>
 
 ### Recommendations
 
