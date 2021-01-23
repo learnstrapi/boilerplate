@@ -2,9 +2,11 @@
 
 Full stack boilerplate for Strapi + Next.js + Chakra UI projects
 
-## Generate Admin JWT Secret Token
+Features:
 
-node -e "console.log(require('crypto').randomBytes(64).toString('base64'))" | pbcopy
+- A monorepo to run Strapi and your Next.js client from a single command `yarn dev` (uses `lerna` under the hood).
+- Options to run just the frontend (once you've deployed your project and setup the `CMS_URL_PRODUCTION` in the `client` package.
+- A basic Next.js app with Chakra UI ready to customise with your own branding (also includes some basic components and Strapi authentication)
 
 ## Getting Started
 
@@ -17,10 +19,12 @@ node -e "console.log(require('crypto').randomBytes(64).toString('base64'))" | pb
 ### Customize your project
 
 1. Setup your repos (or you can add the links later)
-2. Add your project settings to `customize.json`
+2. Add your project settings to `customize.json`. You also need to generate an admin JWT secret token 
+   `node -e "console.log(require('crypto').randomBytes(64).toString('base64'))" | pbcopy`
 3. Run `sh $PWD/scripts/customize` to generate your project
 
-### Local dev
+
+### Running your project locally
 
 #### `lerna bootstrap` Install dependencies
 
@@ -30,3 +34,7 @@ node -e "console.log(require('crypto').randomBytes(64).toString('base64'))" | pb
 
 API: <<<[ .cus.packages.cms.config.url.dev ]>>/admin>
 Client: <<<[ .cus.packages.client.url.dev ]>>>
+
+### Recommendations
+
+We recommend using a submodule for the `packages/cms` directly so you can freely deploy this on Heroku, Digital Ocean, AWS or anywhere you can host a node server.
