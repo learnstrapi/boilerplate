@@ -143,7 +143,7 @@
   },
   "license": "<<[ .cus.packages.client.license ]>>",
   "name": "<<[ .cus.packages.client.name ]>>",
-  "private": "<<[ .cus.packages.client.private ]>>",
+  "private": <<[ .cus.packages.client.private ]>>,
   "scripts": {
     "build": "next build",
     "codegen": "graphql-codegen --config codegen.yml",

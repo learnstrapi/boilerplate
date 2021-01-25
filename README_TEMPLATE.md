@@ -1,4 +1,4 @@
-# <<[ .cus.packages.client.url.prod ]>>
+# <<[ .cus.packages.branding.name ]>>
 
 ## Getting Started
 
