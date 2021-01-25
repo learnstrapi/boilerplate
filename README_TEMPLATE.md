@@ -1,4 +1,4 @@
-# <<[ .cus.packages.branding.name ]>>
+# <<[ .learnstrapi.branding.name ]>>
 
 ## Getting Started
 
@@ -10,6 +10,6 @@
 
 #### `yarn dev:cms` Start frontend with local backend CMS backend with `lerna`
 
-Local CMS (Admin): <<<[ .cus.packages.cms.config.url.dev ]>>/admin>
-Local CMS (GraphQl playground): <<<[ .cus.packages.cms.config.url.dev ]>>/graphql>
-Local client: <<<[ .cus.packages.client.url.dev ]>>>
+Local CMS (Admin): <<<[ .learnstrapi.packages.cms.config.url.dev ]>>/admin>
+Local CMS (GraphQl playground): <<<[ .learnstrapi.packages.cms.config.url.dev ]>>/graphql>
+Local client: <<<[ .learnstrapi.packages.client.url.dev ]>>>

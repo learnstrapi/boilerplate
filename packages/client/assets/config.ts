@@ -1,9 +1,9 @@
 export const AppConfig = {
-  companyName: '<<[ .cus.branding.name ]>>',
-  strapLine: '<<[ .cus.branding.strapLine ]>>',
+  companyName: '<<[ .learnstrapi.branding.name ]>>',
+  strapLine: '<<[ .learnstrapi.branding.strapLine ]>>',
   socials: {
-    instagram: '<<[ .cus.branding.socials.instagram ]>>',
-    linkedin: '<<[ .cus.branding.socials.linkedin ]>>',
-    twitter: '<<[ .cus.branding.socials.twitter ]>>'
+    instagram: '<<[ .learnstrapi.branding.socials.instagram ]>>',
+    linkedin: '<<[ .learnstrapi.branding.socials.linkedin ]>>',
+    twitter: '<<[ .learnstrapi.branding.socials.twitter ]>>'
   }
 }

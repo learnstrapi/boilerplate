@@ -216,7 +216,7 @@ export const authMachine = ({ toast, router }: AuthFormProps) => {
             case 'done.invoke.signUp': {
               return toast({
                 position: 'bottom-right',
-                title: `Welcome to <<[ .cus.branding.name ]>> ${user.username}`,
+                title: `Welcome to <<[ .learnstrapi.branding.name ]>> ${user.username}`,
                 // description: "",
                 status: 'success',
                 duration: 9000,

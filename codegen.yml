@@ -1,5 +1,5 @@
 overwrite: true
-schema: '<<[ .cus.packages.client.url.dev ]>>/graphql'
+schema: '<<[ .learnstrapi.packages.client.url.dev ]>>/graphql'
 documents: 'lib/gql/**/**.ts'
 generates:
   packages/client/lib/gql/types.ts:

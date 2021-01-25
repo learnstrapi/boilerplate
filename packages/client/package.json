@@ -1,8 +1,8 @@
 {
   "author": {
-    "name": "<<[ .cus.author.name ]>>",
-    "email": "<<[ .cus.author.email ]>>",
-    "url": "<<[ .cus.author.url ]>>"
+    "name": "<<[ .learnstrapi.author.name ]>>",
+    "email": "<<[ .learnstrapi.author.email ]>>",
+    "url": "<<[ .learnstrapi.author.url ]>>"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.2",
@@ -62,7 +62,7 @@
     "swr": "^0.1.12",
     "yup": "^0.27.0"
   },
-  "description": "<<[ .cus.packages.client.description ]>>",
+  "description": "<<[ .learnstrapi.packages.client.description ]>>",
   "devDependencies": {
     "@babel/core": "^7.7.4",
     "@babel/helper-call-delegate": "^7.8.7",
@@ -141,9 +141,9 @@
     "**/**/fs-capacitor": "^5.0.0",
     "**/graphql-upload": "^8.0.3"
   },
-  "license": "<<[ .cus.packages.client.license ]>>",
-  "name": "<<[ .cus.packages.client.name ]>>",
-  "private": <<[ .cus.packages.client.private ]>>,
+  "license": "<<[ .learnstrapi.packages.client.license ]>>",
+  "name": "<<[ .learnstrapi.packages.client.name ]>>",
+  "private": <<[ .learnstrapi.packages.client.private ]>>,
   "scripts": {
     "build": "next build",
     "codegen": "graphql-codegen --config codegen.yml",

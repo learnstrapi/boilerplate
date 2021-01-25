@@ -11,7 +11,7 @@ do
          -o "${input_file}" \
          --left-delim "<<[" \
          --right-delim "]>>" \
-         -c cus=./customize.json
+         -c learnstrapi=./customize.json
   fi
 done
 

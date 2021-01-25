@@ -1,8 +1,8 @@
 {
   "author": {
-    "name": "<<[ .cus.author.name ]>>",
-    "email": "<<[ .cus.author.email ]>>",
-    "url": "<<[ .cus.author.url ]>>"
+    "name": "<<[ .learnstrapi.author.name ]>>",
+    "email": "<<[ .learnstrapi.author.email ]>>",
+    "url": "<<[ .learnstrapi.author.url ]>>"
   },
   "description": "Resources and recipes for Strapi afficionados",
   "devDependencies": {
@@ -25,7 +25,7 @@
     "prettier": "^2.0.2",
     "typescript": "^3.9.5"
   },
-  "license": "<<[ .cus.workspace.license ]>>",
+  "license": "<<[ .learnstrapi.workspace.license ]>>",
   "lint-staged": {
     "*.{js, jsx, ts, tsx}": [
       "eslint --fix",
@@ -34,9 +34,9 @@
     ]
   },
   "main": "index.js",
-  "name": "<<[ .cus.workspace.name ]>>",
-  "private": <<[ .cus.workspace.private ]>>,
-  "repository": "<<[ .cus.workspace.repository ]>>",
+  "name": "<<[ .learnstrapi.workspace.name ]>>",
+  "private": <<[ .learnstrapi.workspace.private ]>>,
+  "repository": "<<[ .learnstrapi.workspace.repository ]>>",
   "scripts": {
     "setup": "lerna run setup",
     "dev": "cd ./packages/client && yarn dev",
