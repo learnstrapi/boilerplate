@@ -79,6 +79,7 @@ Desktop.ini
 *#
 ssl
 .idea
+.vscode/
 nbproject
 public/uploads/*
 !public/uploads/.gitkeep

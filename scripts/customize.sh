@@ -1,5 +1,27 @@
 #!/usr/bin/env bash
 
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Linux*)     machine=Linux;;
+    Darwin*)    machine=Mac;;
+    CYGWIN*)    machine=Cygwin;;
+    MINGW*)     machine=MinGw;;
+    *)          machine="UNKNOWN:${unameOut}"
+esac
+
+echo ${machine} "detected!"
+
+if test "$machine" = Mac; then
+  echo "Installing gomplate and tree if needed."
+  brew install gomplate
+  brew install tree
+fi
+
+if test "$machine" = Linux; then
+  echo "Installing gomplate and tree if needed."
+  npm install -g gomplate
+fi
+
 ignore_files=".git|node_modules|_templates|customize|README.md|.cache|.next|build|public|scripts"
 
 for input_file in `tree -I "${ignore_files}" -Ffai --noreport`
