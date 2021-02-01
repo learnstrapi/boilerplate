@@ -10,7 +10,8 @@ case "${unameOut}" in
 esac
 
 echo ${machine} "detected!"
-
+  echo "Installing gomplate and tree if needed."
+  
 if test "$machine" = Mac; then
   echo "Installing gomplate and tree if needed."
   brew install gomplate
@@ -40,4 +41,3 @@ done
 # Clean up / implode
 rm README.md
 mv README_TEMPLATE.md README.md
-
