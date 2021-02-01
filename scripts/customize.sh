@@ -13,7 +13,6 @@ echo ${machine} "detected!"
   echo "Installing gomplate and tree if needed."
   
 if test "$machine" = Mac; then
-  echo "Installing gomplate and tree if needed."
   brew install gomplate
   brew install tree
 fi
