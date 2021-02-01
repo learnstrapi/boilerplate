@@ -18,7 +18,6 @@ if test "$machine" = Mac; then
 fi
 
 if test "$machine" = Linux; then
-  echo "Installing gomplate and tree if needed."
   npm install -g gomplate
 fi
 
