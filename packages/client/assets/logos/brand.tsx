@@ -5,7 +5,7 @@ import { SVGProps } from "./types"
 
 const LogoBrand = ({ fill, ...props }: SVGProps) => {
   return (
-    <Box {...props} zIndex="hide">
+    <Box {...props}>
       <svg
         data-name="Logo"
         height="100%"
