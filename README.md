@@ -6,7 +6,8 @@ Features:
 
 - A monorepo to run Strapi and your Next.js client from a single command `yarn dev` (uses `lerna` under the hood)
 - Options to run just the frontend - once you've deployed your project and setup the `CMS_URL_PRODUCTION` in the `client` package
-- A basic Next.js app with Chakra UI ready to customise with your own branding (also includes some basic components and Strapi authentication)
+- A basic Next.js app with Chakra UI ready to customise with your own branding (also includes some basic components and Strapi
+authentication)
 
 ## Getting Started
 
@@ -21,7 +22,7 @@ Setup `gomplate` and copy env and customization files.
 ### Customize your project
 
 1. Setup your repos (or you can add the links later)
-2. Add your project settings to `customize.json`. 
+2. Add your project settings to `customize.json`.
 
 ---
 
@@ -33,7 +34,7 @@ NOTE: If you need to generate an admin JWT secret token for Strapi
 
 ---
 
-### Generate your project 
+### Generate your project
 
 ```bash
   sh $PWD/scripts/customize
@@ -50,4 +51,5 @@ NOTE: If you need to generate an admin JWT secret token for Strapi
 
 ### Recommendations
 
-We recommend using a submodule for the `packages/cms` package so you can freely deploy this on Heroku, Digital Ocean, AWS or anywhere you can host a node server.
+We recommend using a submodule for the `packages/cms` package so you can freely deploy this on Heroku, Digital Ocean,
+AWS or anywhere you can host a node server.
