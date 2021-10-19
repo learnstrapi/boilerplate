@@ -16,7 +16,7 @@ authentication)
 Setup `gomplate` and copy env and customization files.
 
 ```bash
-  sh $PWD/scripts/init
+  sh $PWD/scripts/init.sh
 ```
 
 ### Customize your project
@@ -37,7 +37,7 @@ NOTE: If you need to generate an admin JWT secret token for Strapi
 ### Generate your project
 
 ```bash
-  sh $PWD/scripts/customize
+  sh $PWD/scripts/customize.sh
 ```
 
 ### Running your project locally
